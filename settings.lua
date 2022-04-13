@@ -11,7 +11,7 @@ data:extend({
 	{
 		type = "int-setting", name = "BSMOND_health_for_coin",
 		setting_type = "startup",
-		default_value = 100, minimal_value = 1, maximal_value = 8e4
+		default_value = 100, minimal_value = 0, maximal_value = 8e4
 	},
 	{
 		type = "int-setting", name = "BSMOND_max_coins",
@@ -21,7 +21,7 @@ data:extend({
 	{
 		type = "int-setting", name = "BSMOND_coins_for_killing_spawner",
 		setting_type = "startup",
-		default_value = 100, minimal_value = 1, maximal_value = 2000
+		default_value = 100, minimal_value = 0, maximal_value = 2000
 	},
 	auto_collect_setting
 })
