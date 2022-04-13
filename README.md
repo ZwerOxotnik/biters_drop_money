@@ -3,13 +3,13 @@
 
 ---
 
-<!-- <p align="center">
+<p align="center">
   <img
     width="144"
     src="thumbnail.png"
-    alt="Biters drop money"
+    alt="thumbnail.png"
   />
-</p> -->
+</p>
 
 <p align="center">
   <a href="https://github.com/ZwerOxotnik/biters_drop_money/tags">
