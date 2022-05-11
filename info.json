@@ -1,48 +1,48 @@
 {
-	"name": "biters_drop_money",
-	"version": "0.9.2",
-	"factorio_version": "1.1",
-	"title": "Biters drop money",
-	"author": "ZwerOxotnik",
-	"contact": "zweroxotnik@gmail.com, Discord:ZwerOxotnik#7117",
-	"homepage": "https://www.reddit.com/r/ZwerOxotnik/",
-	"description": "See locale/*",
-	"dependencies": [
-		"? EasyAPI >= 0.7.0",
-		"(?) enemyracemanager",
-		"(?) erm_toss",
-		"(?) erm_marspeople",
-		"(?) erm_redarmy",
-		"(?) erm_zerg",
-		"(?) ArmouredBiters",
-		"(?) strong-nests",
-		"(?) RampantFixed",
-		"(?) SkyBigMonsters",
-		"(?) Skymageddon",
-		"(?) Rampant",
-		"(?) RampantCC",
-		"(?) 5dim_enemies",
-		"(?) Big-Monsters",
-		"(?) humanoids",
-		"(?) humanoids2",
-		"(?) Swarmageddon",
-		"(?) Cold_biters",
-		"(?) BiterBias",
-		"(?) Explosive_biters",
-		"(?) Hive_Mind",
-		"(?) worm-artillery",
-		"(?) WormAttack",
-		"(?) bobenemies",
-		"(?) Natural_Evolution_Enemies",
-		"(?) Nova-Natural_Evolution_Enemies",
-		"(?) Will-o-the-Wisps_updated",
-		"(?) Will-o-the-Wisps"
-	],
-	"package":
-	{ 
-		"scripts":
-		{
-			"zip_mod": "./.scripts/zip_mod.sh"
-		}
-	}
+  "name": "biters_drop_money",
+  "version": "0.9.2",
+  "factorio_version": "1.1",
+  "title": "Biters drop money",
+  "author": "ZwerOxotnik",
+  "contact": "zweroxotnik@gmail.com, Discord:ZwerOxotnik#7117",
+  "homepage": "https://www.reddit.com/r/ZwerOxotnik/",
+  "description": "See locale/*",
+  "dependencies": [
+    "? EasyAPI >= 0.7.0",
+    "(?) enemyracemanager",
+    "(?) erm_toss",
+    "(?) erm_marspeople",
+    "(?) erm_redarmy",
+    "(?) erm_zerg",
+    "(?) ArmouredBiters",
+    "(?) strong-nests",
+    "(?) RampantFixed",
+    "(?) SkyBigMonsters",
+    "(?) Skymageddon",
+    "(?) Rampant",
+    "(?) RampantCC",
+    "(?) 5dim_enemies",
+    "(?) Big-Monsters",
+    "(?) humanoids",
+    "(?) humanoids2",
+    "(?) Swarmageddon",
+    "(?) Cold_biters",
+    "(?) BiterBias",
+    "(?) Explosive_biters",
+    "(?) Hive_Mind",
+    "(?) worm-artillery",
+    "(?) WormAttack",
+    "(?) bobenemies",
+    "(?) Natural_Evolution_Enemies",
+    "(?) Nova-Natural_Evolution_Enemies",
+    "(?) Will-o-the-Wisps_updated",
+    "(?) Will-o-the-Wisps"
+  ],
+  "package":
+  { 
+    "scripts":
+    {
+      "zip_mod": "./.scripts/zip_mod.sh"
+    }
+  }
 }
