@@ -1,4 +1,10 @@
 ﻿---------------------------------------------------------------------------------------------------
+Version: 0.9.2
+Date: 2022-05-11
+  Locale:
+    - Added Ukrainian translation (thanks to @de_jure (Yuriy) on crowdin)
+    - Translations: https://crowdin.com/project/factorio-mods-localization (thank you for contributions, I really appreciate it)
+---------------------------------------------------------------------------------------------------
 Version: 0.9.1
 Date: 2022-04-13
   Changes:
