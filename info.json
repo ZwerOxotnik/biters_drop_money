@@ -1,6 +1,6 @@
 {
   "name": "biters_drop_money",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "factorio_version": "1.1",
   "title": "Biters drop money",
   "author": "ZwerOxotnik",
@@ -39,7 +39,7 @@
     "(?) Will-o-the-Wisps"
   ],
   "package":
-  { 
+  {
     "scripts":
     {
       "zip_mod": "./.scripts/zip_mod.sh"

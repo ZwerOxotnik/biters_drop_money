@@ -1,4 +1,13 @@
 ﻿---------------------------------------------------------------------------------------------------
+Version: 0.9.3
+Date: 2022-11-06
+  Locale:
+    - Added Brazilian Portuguese translation (thanks to @thoraras (Diego Lemos da Silva) on crowdin)
+    - Added French translation (thanks to @Wiwok on crowdin)
+    - Added German translation (thanks to @Xman1109 on crowdin)
+    - Added Spanish translation (thanks to @Gmet1234 on crowdin)
+    - Translations: https://crowdin.com/project/factorio-mods-localization (thank you for contributions, I really appreciate it)
+---------------------------------------------------------------------------------------------------
 Version: 0.9.2
 Date: 2022-05-11
   Locale:
@@ -8,7 +17,7 @@ Date: 2022-05-11
 Version: 0.9.1
 Date: 2022-04-13
   Changes:
-    - Added a thumbnail 
+    - Added a thumbnail
 ---------------------------------------------------------------------------------------------------
 Version: 0.9.0
 Date: 2022-04-13
