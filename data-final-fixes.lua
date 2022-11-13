@@ -8,6 +8,8 @@ local COINS_FOR_KILLING_SPAWNER = settings.startup.BSMOND_coins_for_killing_spaw
 
 
 biters_drop_money.add_coins = function(prototype, coins, max_coins)
+	if prototype.max_health == nil then return end
+
 	max_coins = max_coins or DEFAULT_MAX_COINS
 	prototype.loot = prototype.loot or {}
 	local loot = prototype.loot
