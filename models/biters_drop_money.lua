@@ -11,9 +11,13 @@ local function on_entity_died(event)
 	if money <= 0 then return end
 	local force = event.force
 	if not (force and force.valid) then return end
-
-	loot.remove(data_for_removing)
-	call("EasyAPI", "deposit_force_money_by_index", force.index, money)
+	
+	local force_index = force.index
+	local force_money = call("EasyAPI", "get_force_money", force_index)
+	if force_money then
+		loot.remove(data_for_removing)
+		call("EasyAPI", "set_force_money_by_index", force_index, force_money + money)
+	end
 end
 
 
