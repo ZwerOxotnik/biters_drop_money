@@ -1,6 +1,6 @@
-
+﻿
 ---------------------------------------------------------------------------------------------------
-Version: 0.9.6
+Version: 0.9.7
 Date: 2022-11-14
   Bugfixes:
     - Improved multiplayer stability when the mod setting was changed

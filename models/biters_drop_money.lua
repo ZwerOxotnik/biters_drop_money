@@ -11,7 +11,7 @@ local function on_entity_died(event)
 	if money <= 0 then return end
 	local force = event.force
 	if not (force and force.valid) then return end
-	
+
 	local force_index = force.index
 	local force_money = call("EasyAPI", "get_force_money", force_index)
 	if force_money then
@@ -49,13 +49,13 @@ script.on_event(
 )
 
 script.on_init(function()
-	if settings.startup.BSMOND_auto_collect.value then
+	if settings.global.BSMOND_auto_collect.value then
 		add_on_entity_died_event()
 	end
 end)
 
 script.on_load(function()
-	if settings.startup.BSMOND_auto_collect.value then
+	if settings.global.BSMOND_auto_collect.value then
 		add_on_entity_died_event()
 	end
 end)
