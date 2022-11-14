@@ -37,17 +37,25 @@ end
 script.on_event(
 	defines.events.on_runtime_mod_setting_changed,
 	function(event)
-		if event.setting ~= "BSMOND_auto_collect" then return end
+		local setting_name = event.setting
+		if setting_name ~= "BSMOND_auto_collect" then return end
 
-		if settings.global["BSMOND_auto_collect"].value == false then
-			script.on_event(defines.events.on_entity_died, nil)
-		else
+		if settings.global[setting_name].value then
 			add_on_entity_died_event()
+		else
+			script.on_event(defines.events.on_entity_died, nil)
 		end
 	end
 )
 
-if settings.startup.BSMOND_health_for_coin.value then
-	add_on_entity_died_event()
-end
+script.on_init(function()
+	if settings.startup.BSMOND_auto_collect.value then
+		add_on_entity_died_event()
+	end
+end)
 
+script.on_load(function()
+	if settings.startup.BSMOND_auto_collect.value then
+		add_on_entity_died_event()
+	end
+end)
