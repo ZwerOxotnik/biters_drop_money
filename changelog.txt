@@ -1,4 +1,11 @@
-﻿
+﻿---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2023-04-26
+  Changes:
+    - Improved compatibility with EasyAPI
+  Locale:
+    - Added Norwegian translation (thanks to @jorgendbj (Allodet) on crowdin)
+    - Translations: https://crowdin.com/project/factorio-mods-localization (thank you for contributions, I really appreciate it)
 ---------------------------------------------------------------------------------------------------
 Version: 0.9.7
 Date: 2022-11-14

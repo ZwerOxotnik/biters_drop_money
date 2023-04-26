@@ -7,7 +7,7 @@ local data_for_removing = {
 }
 local function on_entity_died(event)
 	local loot = event.loot
-	local money = loot.get_item_count("coin")
+	local money = loot.get_item_count("coin") + loot.get_item_count("coinX50") * 50 + loot.get_item_count("coinX2500") * 2500
 	if money <= 0 then return end
 	local force = event.force
 	if not (force and force.valid) then return end

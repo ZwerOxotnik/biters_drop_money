@@ -19,8 +19,26 @@ biters_drop_money.add_coins = function(prototype, coins, max_coins)
 	elseif count == 0 then
 		return
 	end
-	loot[#loot+1] = {item = "coin", probability = 1, count_min = count, count_max = count}
+
+	if EasyAPI then
+		local coin_count = math.floor(count / 2500)
+		if coin_count > 0 then
+			loot[#loot+1] = {item = "coinX2500", probability = 1, count_min = coin_count, count_max = coin_count}
+			count = count - coin_count * 2500
+		end
+		coin_count = math.floor(count / 50)
+		if coin_count > 0 then
+			loot[#loot+1] = {item = "coinX50", probability = 1, count_min = coin_count, count_max = coin_count}
+			count = count - coin_count * 50
+		end
+		if count > 0 then
+			loot[#loot+1] = {item = "coin", probability = 1, count_min = count, count_max = count}
+		end
+	else
+		loot[#loot+1] = {item = "coin", probability = 1, count_min = count, count_max = count}
+	end
 end
+biters_drop_money._add_coins = biters_drop_money.add_coins
 
 if HEALTH_FOR_COIN > 0 then
 	for _, prototype in pairs(data.raw["unit"]) do
