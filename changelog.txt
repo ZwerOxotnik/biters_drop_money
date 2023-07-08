@@ -1,4 +1,10 @@
 ﻿---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2023-07-08
+  Bugfixes:
+    - Fixed integration with EasyAPI: proper amount of money
+    - Doesn't remove coins for forces without money anymore
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2023-04-26
   Changes:

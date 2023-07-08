@@ -1,23 +1,44 @@
 local call = remote.call
 
 
-local data_for_removing = {
+local _coin_stack = {
 	name = "coin",
 	count = 4000000000, -- It's not safe to set count above ~4000000000
 }
+local _coinX50_stack = {
+	name = "coinX50",
+	count = 4000000000, -- It's not safe to set count above ~4000000000
+}
+local _coinX2500_stack = {
+	name = "coinX2500",
+	count = 4000000000, -- It's not safe to set count above ~4000000000
+}
 local function on_entity_died(event)
-	local loot = event.loot
-	local money = loot.get_item_count("coin") + loot.get_item_count("coinX50") * 50 + loot.get_item_count("coinX2500") * 2500
-	if money <= 0 then return end
 	local force = event.force
-	if not (force and force.valid) then return end
+	if not force then return end
+	local force_money = call("EasyAPI", "get_force_money", force.index)
+	if force_money then return end
+	local loot = event.loot
+	local get_item_count = loot.get_item_count
 
-	local force_index = force.index
-	local force_money = call("EasyAPI", "get_force_money", force_index)
-	if force_money then
-		loot.remove(data_for_removing)
-		call("EasyAPI", "set_force_money_by_index", force_index, force_money + money)
+	local count = get_item_count("coin")
+	local money = count
+	if count > 0 then
+		loot.remove(_coin_stack)
 	end
+	count = get_item_count("coinX50")
+	if count > 0 then
+		money = money + count * 50
+		loot.remove(_coinX50_stack)
+	end
+	count = get_item_count("coinX2500")
+	if count > 0 then
+		money = money + count * 2500
+		loot.remove(_coinX2500_stack)
+	end
+	if money == 0 then return end
+
+	call("EasyAPI", "set_force_money_by_index", force.index, force_money + money)
 end
 
 
