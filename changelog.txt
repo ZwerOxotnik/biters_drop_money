@@ -1,4 +1,12 @@
 ﻿---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 2024-09-21
+  Bugfixes:
+    - It should actually work properly now
+  Locale:
+    - Added Norwegian translation (thanks to @lasgra11 on crowdin)
+    - Translations: https://crowdin.com/project/factorio-mods-localization (thank you for contributions, I really appreciate it)
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 2023-07-08
   Bugfixes:

@@ -17,7 +17,7 @@ local function on_entity_died(event)
 	local force = event.force
 	if not force then return end
 	local force_money = call("EasyAPI", "get_force_money", force.index)
-	if force_money then return end
+	if not force_money then return end
 	local loot = event.loot
 	local get_item_count = loot.get_item_count
 
