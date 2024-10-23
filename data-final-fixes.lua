@@ -43,10 +43,7 @@ biters_drop_money._add_coins = biters_drop_money.add_coins
 if HEALTH_FOR_COIN > 0 then
 	for _, prototype in pairs(data.raw["unit"]) do
 		local autoplace = prototype.autoplace
-		if prototype.pollution_to_join_attack or
-			prototype.build_base_evolution_requirement or
-			autoplace and autoplace.force == "enemy"
-		then
+		if prototype.subgroup == "enemies" then
 			biters_drop_money.add_coins(prototype)
 		end
 	end
